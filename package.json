@@ -1,0 +1,46 @@
+{
+  "name": "textlint-plugin-jawn",
+  "description": "JAWN-FS plugin for textlint.",
+  "version": "1.0.0",
+  "author": "matori <pnr.matori@gmail.com> (https://github.com/matori)",
+  "dependencies": {
+    "jawn-to-ast": "^1.0.1"
+  },
+  "devDependencies": {
+    "@textlint/kernel": "^3.4.4",
+    "@textlint/types": "^1.5.4",
+    "@types/mocha": "^8.2.1",
+    "@types/node": "^14.14.37",
+    "mocha": "^8.3.2",
+    "textlint": "^11.9.0",
+    "textlint-rule-no-todo": "^2.0.1",
+    "ts-node": "^9.1.1",
+    "ts-node-test-register": "^9.0.1",
+    "typescript": "^4.2.3"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib/",
+    "module/",
+    "src/"
+  ],
+  "keywords": [
+    "jawn",
+    "plugin",
+    "textlint",
+    "textlintplugin"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "./module/index.js",
+  "scripts": {
+    "build": "tsc -b && tsc -b tsconfig.module.json",
+    "dev": "ts-node-dev --respawn dev/run.ts",
+    "perf": "ts-node dev/perf.ts",
+    "test": "mocha 'test/**/*.ts'"
+  },
+  "types": "lib/index.d.ts"
+}
