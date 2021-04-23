@@ -7,13 +7,13 @@
     "url": "https://github.com/matori/textlint-plugin-jawn/issues"
   },
   "dependencies": {
-    "jawn-to-ast": "^1.0.1"
+    "jawn-to-ast": "^1.0.3"
   },
   "devDependencies": {
     "@textlint/kernel": "^3.4.4",
     "@textlint/types": "^1.5.4",
     "@types/mocha": "^8.2.1",
-    "@types/node": "^14.14.37",
+    "@types/node": "^14.14.41",
     "mocha": "^8.3.2",
     "textlint": "^11.9.0",
     "textlint-rule-no-todo": "^2.0.1",
