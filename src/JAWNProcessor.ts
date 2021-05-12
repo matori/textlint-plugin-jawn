@@ -1,6 +1,7 @@
 'use strict';
 import { parse } from 'jawn-to-ast';
 import type { TextlintPluginProcessor, TextlintPluginOptions } from '@textlint/types';
+import { TxtNode } from '@textlint/ast-node-types';
 
 export class JAWNProcessor implements TextlintPluginProcessor {
   config: TextlintPluginOptions;
@@ -15,10 +16,10 @@ export class JAWNProcessor implements TextlintPluginProcessor {
 
   processor(_ext: string) {
     return {
-      preProcess(text: string, _filePath?: string) {
+      preProcess(text: string, _filePath?: string): TxtNode {
         return parse(text);
       },
-      postProcess(messages: Array<any>, filePath?: string) {
+      postProcess(messages: Array<any>, filePath?: string): { messages: Array<any>; filePath: string } {
         return {
           messages,
           filePath: filePath ? filePath : '<jawn>',
