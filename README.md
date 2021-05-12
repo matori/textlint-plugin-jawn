@@ -1,6 +1,6 @@
 # textlint-plugin-jawn
 
-日本のウェブ小説サービスへマルチポストするための基礎構文「[序云FS](https://github.com/matori/jawn-fs)」の[textlint](https://github.com/textlint/textlint)用プラグインです。
+日本のウェブ小説サービスへマルチポストするための基礎構文「[JAWN-FS](https://github.com/matori/jawn-fs)」の[textlint](https://github.com/textlint/textlint)用プラグインです。
 
 ## インストール
 
